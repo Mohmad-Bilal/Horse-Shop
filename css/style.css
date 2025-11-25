@@ -1,0 +1,116 @@
+.horse-logo {
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
+}
+.div-main {
+  width: 70%;
+  margin: auto;
+}
+#user-stuf {
+  display: none;
+}
+#user-stuf {
+  position: relative;
+}
+.cart-content {
+  padding: 5px;
+  z-index: 10;
+  top: 50px;
+  right: 0px;
+  text-align: center;
+  width: 165px;
+  position: absolute;
+  border: 2px solid black;
+  display: none;
+}
+.plus-sign,
+.minus-sign {
+  top: 9px;
+  left: 10px;
+}
+#removingBtn,
+.rembtn {
+  display: none;
+}
+
+#favBtn {
+  display: none;
+}
+.cart-remove-btn {
+  position: absolute;
+  bottom: 10%;
+}
+.cart-container {
+  width: 80%;
+  margin: auto;
+}
+.favorite-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.favorite-container .card {
+  flex: 0 0 auto;
+  width: 18rem;
+}
+
+.favorite-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.favorite-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.custom-card {
+  border-width: 2px;
+
+  transition: 0.5s;
+}
+
+.custom-card:hover {
+  border: 2px solid #0d6dfda1;
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.custom-card2,
+.custom-card3 {
+  height: auto;
+  border-width: 2px;
+
+  transition: 0.5s;
+}
+.custom-card2:hover,
+.custom-card3:hover {
+  border: 2px solid red;
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.custom-card3 img {
+  padding: 10px;
+}
+.custom-card2 img {
+  padding: 15px;
+  height: 200px;
+  width: 225px;
+}
+.fav-border {
+  width: 18%;
+  transition: 0.25s;
+}
+.fav-border:hover {
+  width: 50%;
+}
+
+.active-card,
+.active-card:hover {
+  /* border: 2px solid #0d6dfda1 !important; */
+  transition: 0.05s;
+  transform: translateY(0px) !important;
+  box-shadow: none !important;
+}

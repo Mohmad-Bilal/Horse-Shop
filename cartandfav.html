@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Your Cart</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary mb-4" data-bs-theme="light">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand ms-4">
+            <img
+              class="rounded-circle border border-1 border-dark horse-logo"
+              style="width: 75px; height: 75px"
+              src="/images/logo3.jpg"
+              alt=""
+          /></a>
+          <form action="" class="d-flex" role="search">
+            <div id="buttons">
+              <a
+                href="login.html"
+                class="btn btn-outline-primary mx-1"
+                type="submit"
+              >
+                Login
+              </a>
+
+              <a
+                href="register.html"
+                class="btn btn-outline-success mx-1"
+                type="submit"
+              >
+                Register
+              </a>
+            </div>
+            <div class="" id="user-stuf">
+              <p class="d-inline">Hello,<span id="user"></span></p>
+
+              <i class="fas fa-shopping-cart ms-2 me-0 btn text-primary my-cart"
+                ><span class="mx-2" id="cart-number">0</span></i
+              >
+              <div class="cart-content bg-light">
+                <div></div>
+                <a
+                  href="cartandfav.html"
+                  class="w-100 text-decoration-none bg-primary text-white d-block py-2"
+                  >View All Products</a
+                >
+              </div>
+              <button class="btn btn-outline-danger mx-2" id="logout">
+                Logout
+              </button>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <section class="mb-5 pb-4 border-bottom">
+      <div class="cart-container">
+        <div class="row m-auto cart-products" id=""></div>
+      </div>
+      <h3 class="text-center mt-3">Total Price: $0000</h3>
+    </section>
+
+    <section class="container mt-5 mx-auto fav-container">
+      <h3
+        class="mx-auto border-bottom border-3 pb-2 border-danger text-center fav-border"
+      >
+        Favorite Items
+      </h3>
+
+      <div class="favorite-container pb-2 pt-4 mb-5"></div>
+    </section>
+
+    <script src="js/cart.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/bootstrap.bundle.min.js" async defer></script>
+  </body>
+</html>

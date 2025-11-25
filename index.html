@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Horse Shop</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary mb-4" data-bs-theme="light">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand ms-4">
+            <img
+              class="rounded-circle border border-1 border-dark horse-logo"
+              style="width: 75px; height: 75px"
+              src="/images/logo3.jpg"
+              alt=""
+          /></a>
+          <form action="" class="d-flex" role="search">
+            <div id="buttons">
+              <a
+                href="login.html"
+                class="btn btn-outline-primary mx-1"
+                type="submit"
+              >
+                Login
+              </a>
+
+              <a
+                href="register.html"
+                class="btn btn-outline-success mx-1"
+                type="submit"
+              >
+                Register
+              </a>
+            </div>
+            <div class="" id="user-stuf">
+              <p class="d-inline">Hello,<span id="user"></span></p>
+
+              <i class="fas fa-shopping-cart ms-2 me-0 btn text-primary my-cart"
+                ><span class="mx-2" id="cart-number">0</span></i
+              >
+              <div class="cart-content bg-light">
+                <div></div>
+                <a
+                  href="cartandfav.html"
+                  class="w-100 text-decoration-none bg-primary text-white d-block py-2"
+                  >View All Products</a
+                >
+              </div>
+              <button class="btn btn-outline-danger mx-2" id="logout">
+                Logout
+              </button>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container search-section">
+      <div class="d-flex justify-content-center align-items-center py-3">
+        <div class="dropdown">
+          <button
+            class="btn btn-light dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            id="userSearchChoice"
+          ></button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" id="searchByProduct" href="#"
+                >Search by Product Name</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" id="searchByCategory" href="#"
+                >Search by Category</a
+              >
+            </li>
+          </ul>
+        </div>
+        <input
+          class="form-control ms-4 w-50"
+          type="search"
+          placeholder="Search..."
+          aria-label="Search"
+          id="searchBar"
+        />
+        <button class="btn btn-dark mx-4 px-5" type="submit">Search</button>
+      </div>
+      <section class="container m-auto">
+        <div class="row products mx-auto mt-4"></div>
+      </section>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/bootstrap.bundle.min.js" async defer></script>
+  </body>
+</html>

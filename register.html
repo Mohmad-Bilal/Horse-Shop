@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Register</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="js/bootstrap.bundle.min.js" async defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary mb-4" data-bs-theme="light">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand ms-4">
+            <img
+              class="rounded-circle border border-1 border-dark horse-logo"
+              style="width: 75px; height: 75px"
+              src="/images/logo3.jpg"
+              alt=""
+          /></a>
+          <form action="" class="d-flex" role="search">
+            <div id="buttons">
+              <a
+                href="login.html"
+                class="btn btn-outline-primary mx-1"
+                type="submit"
+              >
+                Login
+              </a>
+
+              <a
+                href="register.html"
+                class="btn btn-outline-success mx-1"
+                type="submit"
+              >
+                Register
+              </a>
+            </div>
+            <div class="" id="user-stuf">
+              <p class="d-inline">Hello,<span id="user"></span></p>
+              <i class="fas fa-shopping-cart ms-2 me-0"
+                ><span class="mx-2" id="cart-number">0</span></i
+              >
+              <button class="btn btn-outline-danger mx-2" id="logout">
+                Logout
+              </button>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <section class="div-main my-5 bg-secondary p-4 rounded bg-opacity-25">
+      <div class="row">
+        <div class="col-6 mx-auto">
+          <span class="mb-2 d-block">First Name</span>
+          <input
+            class="form-control me-2"
+            id="first-name"
+            type="search"
+            placeholder="Enter First Name"
+            aria-label="Search"
+          />
+        </div>
+        <div class="col-6 mx-auto">
+          <span class="mb-2 d-block">Last Name</span>
+          <input
+            class="form-control me-2"
+            id="last-name"
+            type="search"
+            placeholder="Enter Last Name"
+            aria-label="Search"
+          />
+        </div>
+        <div class="col-12 mx-auto mt-3">
+          <span class="mb-2 d-block">Email</span>
+          <input
+            class="form-control me-2"
+            id="email"
+            type="email"
+            placeholder="Enter Email"
+            aria-label="Search"
+          />
+        </div>
+        <div class="col-12 mx-auto mt-3">
+          <span class="mb-2 d-block">Password</span>
+          <input
+            class="form-control me-2"
+            id="password"
+            type="password"
+            placeholder="Enter Password"
+            aria-label="Search"
+          />
+        </div>
+        <div class="col-12 mx-auto mt-3">
+          <button class="btn btn-primary" id="register-btn">Register</button>
+          <p class="mt-2">
+            have an account?
+            <a href="login.html" class="text-decoration-none text-primary"
+              >Login</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/register.js" async defer></script>
+    <script src="js/bootstrap.bundle.min.js" async defer></script>
+  </body>
+</html>
